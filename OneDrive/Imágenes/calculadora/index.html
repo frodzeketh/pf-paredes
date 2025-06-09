@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1 class="calculator-title">🧮 Calculadora</h1>
+        <p class="calculator-subtitle">Suma dos números del 1 al 10</p>
+        
+        <div class="input-section">
+            <label class="input-label" for="numero1">Elija un número del 1 al 10:</label>
+            <input type="number" id="numero1" class="number-input" min="1" max="10" placeholder="Ingrese el primer número">
+        </div>
+        
+        <div class="input-section">
+            <label class="input-label" for="numero2">Seleccione otro número:</label>
+            <input type="number" id="numero2" class="number-input" min="1" max="10" placeholder="Ingrese el segundo número">
+        </div>
+        
+        <button class="calculate-btn">
+            ✨ Calcular Suma
+        </button>
+        
+        <div class="error-message" id="errorMessage">
+            Por favor, ingrese números válidos del 1 al 10
+        </div>
+        
+        <div class="result-section">
+            <div class="result-text">La suma de 5 + 3 es igual a:</div>
+            <div class="result-number">8</div>
+            <button class="reset-btn">Calcular de nuevo</button>
+        </div>
+    </div>
+</body>
+</html>
